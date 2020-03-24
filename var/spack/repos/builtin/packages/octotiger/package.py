@@ -28,7 +28,7 @@ class Octotiger(CMakePackage):
         args = []
 
         # Kokkos
-        args.append('-OCTOTIGER_WITH_KOKKOS={0}'.format(
+        args.append('-DOCTOTIGER_WITH_KOKKOS={0}'.format(
             'ON' if '@octotiger_with_kokkos' else 'OFF'
         ))
         # set nvcc_wrapper as compiler
