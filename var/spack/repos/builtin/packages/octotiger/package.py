@@ -35,10 +35,10 @@ class Octotiger(CMakePackage):
 
         # Kokkos
         args.append('-DOCTOTIGER_WITH_KOKKOS={0}'.format(
-            'ON' if '@octotiger_with_kokkos' else 'OFF'
+            'ON' if '@octotiger_with_kokkos' in spec else 'OFF'
         ))
         # set nvcc_wrapper as compiler
-        if '@octotiger_with_kokkos':
+        if '@octotiger_with_kokkos' in spec:
             args.append("-DCMAKE_CXX_COMPILER=%s" % self.spec["kokkos-nvcc-wrapper"].kokkos_cxx)
 
         return args
