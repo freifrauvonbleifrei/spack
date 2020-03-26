@@ -4,13 +4,13 @@ Date: Fri, 4 Oct 2019 10:35:41 +0200
 Subject: [PATCH] Add -dumpversion option to nvcc_wrapper
 
 ---
- bin/nvcc_wrapper | 11 +++++++++++
+ nvcc_wrapper.in | 11 +++++++++++
  1 file changed, 11 insertions(+)
 
-diff --git a/bin/nvcc_wrapper b/bin/nvcc_wrapper
+diff --git a/nvcc_wrapper.in b/nvcc_wrapper.in
 index 3f497430..57a053a3 100755
---- a/bin/nvcc_wrapper
-+++ b/bin/nvcc_wrapper
+--- a/nvcc_wrapper.in
++++ b/nvcc_wrapper.in
 @@ -76,6 +76,7 @@ host_only_args=""
  
  # Just run version on host compiler
